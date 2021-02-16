@@ -21,9 +21,11 @@ btn.onclick = function viewMode () {
         overlay.setAttribute('class', 'light');
         btn.setAttribute('class', 'light');
         btn.textContent = 'Lighten';
+        overlay.style.backgroundcolor = "rgba(0,0,0,0.5)";
     } else {
         overlay.setAttribute('class', 'dark');
         btn.setAttribute('class', 'dark');
         btn.textContent = 'Darken';
+        overlay.style.backgroundcolor = "rgba(0,0,0,0)";
     }
 }
