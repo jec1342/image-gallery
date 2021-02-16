@@ -16,3 +16,14 @@ for (i =1; i < 6; i++) {
 }
 
 /* Wiring up the Darken/Lighten button */
+btn.onclick = function viewMode () {
+    if(btn.getAttribute('class') === 'dark') {
+        overlay.setAttribute('class', 'light');
+        btn.setAttribute('class', 'light');
+        btn.textContent = 'Lighten';
+    } else {
+        overlay.setAttribute('class', 'dark');
+        btn.setAttribute('class', 'dark');
+        btn.textContent = 'Darken';
+    }
+}
